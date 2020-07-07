@@ -1,0 +1,1253 @@
+/* FUENTES*/
+@font-face {
+	font-family: 'Conv_playtime-webfont';
+	src: url('fonts/playtime-webfont.eot');
+	src: local('☺'), url('fonts/playtime-webfont.woff') format('woff'), url('fonts/playtime-webfont.ttf') format('truetype'), url('fonts/playtime-webfont.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*----------------------------------------------MEJORAS GENÉRICAS AL ESTILO----------------------------------*/
+
+/*Arreglo listas por defecto*/
+.content ol li:before,
+ .cke_contents ol li:before {
+    position: relative;
+    margin-right: 7px;
+}
+
+/*-----------------LISTA 2-----------------------------*/
+
+.content ol.bck-ol2 li:before,
+.cke_contents ol.bck-ol2 li:before {
+    width: 20px;
+}
+
+/*Arreglo lista 2*/
+.content ol.bck-ol2 li:before,
+ .cke_contents ol.bck-ol2 li:before {
+    position: absolute;
+}
+
+.content ol.bck-ol2,
+ .cke_contents ol.bck-ol2 {
+    font-size: 18px;
+}
+
+/*----------------HEADER----------------------------*/
+.content_type_clase_julioalma #actividad .content .header .title {
+    overflow: visible;
+}
+
+/*-----------------CRUCIGRAMA-------------------------*/
+ol.enunciados li.enunciado:before {
+    margin-left: -20px;
+}
+
+.slide.crosswords-puzzle .enunciados {
+    margin-top: 10px;
+}
+
+/*------- Mejoras en vista movil ----------*/
+/* Smartphones (portrait & landscape) */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+    #actividad .class_slide {
+        padding: 0;
+    }
+    .content_type_clase_julioalma #actividad .content .header .title h3 {
+        font-size: 22px;
+    }
+    .content_type_clase_julioalma #actividad .content .header .title h3 span.slide_number {
+        line-height: 2.0;
+        right: 132px;
+        font-size: 25px;
+        text-align: center;
+        line-height: 1.8;
+        margin-top: -40px;
+    }
+}
+
+
+/*--------- Cambios para coursetag_almadieci ------*/
+    /*--------------------- TOC ------------------------*/
+    /*-----------------------------------------------*/
+    .coursetag_almadieci #indice .units ul li {
+        margin-bottom: 10px;
+        padding: 3px 16px;
+        -webkit-box-shadow: 2px 3px 4px 1px #00000042;
+        -moz-box-shadow: 2px 3px 4px 1px #00000042;
+        box-shadow: 2px 3px 4px 1px #00000042;
+        -moz-transition: all 0.2s ease-in-out;
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .coursetag_almadieci #indice .units ul li.active:not(.disabled),
+    body:not(.isTablet).coursetag_almadieci #indice .units ul li:hover:not(.disabled),
+    .coursetag_almadieci #indice .units ul li:focus:not(.disabled) {
+        background: #249ed16e;
+        border-bottom: 8px solid #249ed1;
+    }
+    .coursetag_almadieci #indice .units ul li a .title {
+        font-size: 18px;
+        padding: 10px;
+    }
+    .coursetag_almadieci #indice .unit-content .header.default {
+        background: #97cbe1 !important;
+    }
+    .coursetag_almadieci #indice .unit-content .header.default:after {
+        background-image: url(/themes/responsive/assets/styles/alma_newitalianespresso/logoALMA.png);
+        content: "";
+        padding: 42px;
+        right: 39px;
+        bottom: -33px;
+        position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .coursetag_almadieci .btn-primary,
+    .coursetag_almadieci .btn-primary.disabled,
+    .coursetag_almadieci .btn-primary.disabled:hover,
+    .coursetag_almadieci .btn-primary.disabled:focus {
+        color: #fff;
+        background-color: #249ed1;
+        border-color: transparent;
+        opacity: 1;
+    }
+    /*------------*/
+
+/*----------------- BARRA SUPERIOR ------------------------------*/
+    .coursetag_almadieci.content_type_clase_julioalma .publisher-navbar {
+        border-bottom: 3px solid #249ed1;
+    }
+
+/*---*/
+
+/*--------------TITLE--------------------------*/
+    .coursetag_almadieci.content_type_clase_julioalma #actividad .content .header {
+        padding: 50px 20px 0px 12px;
+        margin-left: -34px;
+        border-bottom: 5px solid #da3d96;
+    }
+    .coursetag_almadieci.content_type_clase_julioalma #actividad .content .header .title{
+        margin-bottom: 7px;
+    }
+    .coursetag_almadieci.content_type_clase_julioalma #actividad .content .header .title h3 {
+        color: #da3d96;
+        font-weight: 600;
+        line-height: 35px;
+    }
+    .coursetag_almadieci.content_type_clase_julioalma #actividad .content .header .title h3 span.slide_number {
+        background: #da3d96;
+        height: 46px;
+        top: 50px;
+        right: 107px;
+        line-height: 1.4em;
+        -moz-border-radius: 0px;
+        -webkit-border-radius: 0px;
+        border-radius: 0px;
+        font-weight: 700;
+    }
+    .coursetag_almadieci.content_type_clase_julioalma #actividad .content .header .title .area {
+        display: inline-block;
+        background: #DA3D96;
+        padding: 5px 10px 5px 5px;
+        -webkit-border-radius: 7px;
+        -moz-border-radius: 7px;
+        border-radius: 7px;
+        color: white;
+        font-family: 'Conv_playtime-webfont', cursive;
+        font-size: 21px;
+        line-height: 27px;
+    }
+/*----------*/    
+
+/*---------------------ESTILOS --------------------------------*/
+/*Configuracion slide*/
+.coursetag_almadieci #actividad .carousel-inner .item-container {
+    padding-top: 0;
+}
+
+/*Barra superior*/
+.coursetag_almadieci.content_type_clase_julioalma .publisher-navbar #top-navigator .slider-indicators {
+    background: #249ed1;  
+}
+
+/*ICONOS*/
+.coursetag_almadieci .texto_curso p.square-icon,
+.coursetag_almadieci .texto_curso p.triangle-icon,
+.texto_curso p.circle-icon,
+.texto_curso p.rombo-icon {
+    margin-bottom: 0;
+}
+.coursetag_almadieci .square-icon,
+.coursetag_almadieci .triangle-icon,
+.circle-icon,
+.rombo-icon {
+    padding-left: 22px;
+}
+.coursetag_almadieci .square-icon:before,
+.coursetag_almadieci .triangle-icon:before,
+.circle-icon:before,
+.rombo-icon:before {
+    content: '';
+    width: 11px;
+    height: 11px;
+    margin-left: -22px;
+    background: #6BC4C2;
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+}
+.coursetag_almadieci .triangle-icon:before {
+    background: linear-gradient(65deg, transparent 4px, #DA3D96 0) left, linear-gradient(-65deg, transparent 4px, #DA3D96 0) right;
+    background-size: 51% 100%;
+    background-repeat: no-repeat;
+}
+.circle-icon:before {
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        border-radius: 25px;
+}
+.rombo-icon:before {
+    background: #005FB4;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* --------- TITULOS ---- */
+
+/*Titulo 1 - Enunciados*/
+.coursetag_almadieci.content ol.bck-ol1 li,
+ .coursetag_almadieci.cke_contents ol.bck-ol1 li,
+  .coursetag_almadieci h4.bck-title1 {
+    font-style: italic;
+}
+/*Titulo 2*/
+.bck-title2 {
+    color: #da3d96;
+    font-weight: 600;
+}
+/*Titulo 3*/
+.bck-title3 {
+    color: #92CD8D;
+    font-weight: 600;
+}
+
+/*Titulo 4*/
+.bck-title4 {
+    color: #6DC1C3;
+    font-weight: 600;
+}
+
+/*Titulo 5 - Para boton de audio*/ 
+.bck-title5 {
+    background: red;
+    display: inline-block;
+    background: #F9CE08;
+    font-weight: 700;
+    padding: 0px 8px;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    font-size: 18px;
+}
+
+/*Titulo 6 - Enunciado amarillo*/
+.bck-title6 {
+    color: #F9CE08;
+    font-weight: 600;
+}
+
+/*Títulos 7 8 9 10 11,12 - Fondo de color*/
+.bck-title7,
+.bck-title8,
+.bck-title9,
+.bck-title10,
+.bck-title11,
+.bck-title12 {
+    background: #da3d96;
+    color: white;
+    padding: 5px 10px;
+    font-weight: 700;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    margin: 10px 0;
+    width: -moz-fit-content;
+    width: webkit-content;
+    width: fit-content;
+}
+
+.bck-title8 {
+    background: #6DC1C3;
+}
+.bck-title9 {
+    background: #92CD8D;
+}
+.bck-title10 {
+    background: #F9CE08;
+}
+.bck-title11 {
+    background: #0e5ba5;
+}
+.bck-title12 {
+    background: #da3832;
+}
+
+/*Título 13*/
+.bck-title13 {
+    color: #0e5ba5;
+    font-weight: 600;
+}
+/*Título 14*/
+.bck-title14 {
+    color: #da3832;
+    font-weight: 600;
+}
+
+/*ENFASIS*/
+/*Énfasis 1*/
+.bck-enfasis1 {
+    font-size: 25px;
+    font-family: 'Conv_playtime-webfont', cursive;
+    font-weight: 700;
+    color: #da3d96;
+    margin-left: -32px;
+    text-align: left;
+    margin-right: 4px;
+    position: relative;
+    width: 30px;
+    display: inline-block;
+    text-align: center;
+}
+/*Énfasis 2*/
+.bck-enfasis2 {
+    font-size: 25px;
+    font-family: 'Conv_playtime-webfont', cursive;
+    font-weight: 700;
+    color: #92CD8D;
+    margin-left: -32px;
+    text-align: left;
+    margin-right: 4px;
+    position: relative;
+    width: 30px;
+    text-align: center;
+    display: inline-block;
+}
+
+/*Énfasis 3*/
+.bck-enfasis3 {
+    font-size: 25px;
+    font-family: 'Conv_playtime-webfont', cursive;
+    font-weight: 700;
+    color: #6DC1C3;
+    margin-left: -32px;
+    text-align: left;
+    margin-right: 4px;
+    position: relative;
+    width: 30px;
+    text-align: center;
+    display: inline-block;
+}
+/*Énfasis 4*/
+.bck-enfasis4 {
+    font-size: 25px;
+    font-family: 'Conv_playtime-webfont', cursive;
+    font-weight: 700;
+    color: #FED65D;
+    margin-left: -32px;
+    text-align: left;
+    margin-right: 4px;
+    position: relative;
+    width: 30px;
+    text-align: center;
+    display: inline-block;
+}
+/*Enfasis 12 - Número azul*/
+.bck-enfasis12 {
+    font-size: 25px;
+    font-family: 'Conv_playtime-webfont', cursive;
+    font-weight: 700;
+    color: #0e5ba5;
+    margin-left: -32px;
+    text-align: left;
+    margin-right: 4px;
+    position: relative;
+    width: 30px;
+    text-align: center;
+    display: inline-block;
+}
+/*Énfasis 13 - Número rojo*/
+.bck-enfasis13 {
+    font-size: 25px;
+    font-family: 'Conv_playtime-webfont', cursive;
+    font-weight: 700;
+    color: #da3832;
+    margin-left: -32px;
+    text-align: left;
+    margin-right: 4px;
+    position: relative;
+    width: 30px;
+    text-align: center;
+    display: inline-block;
+}
+
+/*Énfasis 5 - Subrayado en celeste*/
+.bck-enfasis5 {
+    background: #95D0D0;
+    font-weight: bold;
+    padding: 1px 4px;
+}
+/*---- ÉNFASIS CAMBIO DE COLOR ----*/
+.bck-enfasis6 {
+    color: #da3d96;
+}
+.bck-enfasis7 {
+    color: #92CD8D;
+}
+.bck-enfasis8 {
+    color: #6DC1C3;
+}
+.bck-enfasis9 {
+    color: #FED65D;
+}
+.bck-enfasis14 {
+    color: #0e5ba5;
+}
+.bck-enfasis15 {
+    color: #da3832;
+}
+.bck-enfasis10 {
+    font-family: 'Conv_playtime-webfont', cursive;
+}
+.bck-enfasis11 {
+    font-family: 'Conv_playtime-webfont', cursive;
+    font-weight: 800;
+}
+
+/*Boton audio*/
+.coursetag_almadieci #actividad .player.audio,
+.coursetag_almadieci #help-panel-content .player.audio,
+.coursetag_almadieci #remote-alert-modal-rich .player.audio {
+    background-image: url(/useruploads/r/a/171663046/activity_other_imported/Botonplay_almaedizioni.png);
+    vertical-align: middle;
+    display: inline-block;
+}
+
+/*------------CAJAS-------------------*/
+/*CAJA 2*/
+.bck-box.box-2 .bck-title {
+    background: #FFCA08;
+    display: inline-block;
+    padding: 1px 13px;
+    border-radius: 7px 7px 0px 0px;
+    -moz-border-radius: 7px 7px 0px 0px;
+    -webkit-border-radius: 7px 7px 0px 0px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left: 27px;
+}
+.bck-box.box-2 .bck-content {
+    border: 2px solid #FFCA08;
+    padding: 10px;
+}
+.bck-box.box-2 .bck-title:before {
+    content: '\f0eb';
+    font-family: 'FontAwesome';
+    position: absolute;
+    left: 3px;
+    margin-top: 5px;
+    font-size: 32px;
+    color: #ffca08;
+    font-weight: 100;
+}
+
+/*CAJA 3*/
+.bck-box.box-3 {
+    padding: 10px;
+    border: 5px double #69C363;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+}
+.bck-box.box-3:before {
+    content: '\f002';
+    font-family: 'FontAwesome';
+    margin-top: 0;
+    font-size: 28px;
+    color: #69C363;
+    position: absolute;
+}
+.bck-box.box-3 .bck-title {
+    font-weight: bold;
+    padding-left: 34px;
+}
+
+/*CAJA 4 - Bocadillo rosa*/
+.bck-box.box-4:before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-top: 23px solid #da3d96;
+    border-right: 20px solid transparent;
+    border-left: 1px solid transparent;
+    bottom: -25px;
+    margin: 0 0 0 40px;
+}
+.bck-box.box-4 {
+    padding: 10px;
+    position: relative;
+    border: 2px solid #DA3D96;
+}
+.bck-box.box-4 .bck-title {
+    border: 2px dotted #DA3D96;
+    padding: 0 14px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+/*CAJA 5 - Bocadillo celeste*/
+.bck-box.box-5:before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-top: 23px solid #94CED0;
+    border-right: 20px solid transparent;
+    border-left: 1px solid transparent;
+    bottom: -25px;
+    margin: 0 0 0 40px;
+}
+.bck-box.box-5 {
+    padding: 10px;
+    position: relative;
+    border: 2px solid #94CED0;
+}
+.bck-box.box-5 .bck-title {
+    border: 2px dotted #94CED0;
+    padding: 0 14px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+/*CAJA 6 - Bocadillo celeste*/
+.bck-box.box-6:before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-top: 23px solid #92CD8D;
+    border-right: 20px solid transparent;
+    border-left: 1px solid transparent;
+    bottom: -25px;
+    margin: 0 0 0 40px;
+}
+.bck-box.box-6 {
+    padding: 10px;
+    position: relative;
+    border: 2px solid #92CD8D;
+}
+.bck-box.box-6 .bck-title {
+    border: 2px dotted #92CD8D;
+    padding: 0 14px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+/*CAJA 6 - Bocadillo celeste*/
+.bck-box.box-6:before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-top: 23px solid #92CD8D;
+    border-right: 20px solid transparent;
+    border-left: 1px solid transparent;
+    bottom: -25px;
+    margin: 0 0 0 40px;
+}
+.bck-box.box-6 {
+    padding: 10px;
+    position: relative;
+    border: 2px solid #92CD8D;
+}
+.bck-box.box-6 .bck-title {
+    border: 2px dotted #92CD8D;
+    padding: 0 14px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+/*CAJA 7 - Caja title celeste*/
+.bck-box.box-7 .bck-title {
+    background: #6DC1C3;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+}
+.bck-box.box-7 {
+    border: 2px solid #6DC1C3;
+}
+.bck-box.box-7 .bck-content {
+    padding: 10px;
+}
+
+/*CAJA 8 - fLECHA VERDE*/
+.bck-box.box-8 {
+    border: 3px dotted #92cd8d;
+}
+.bck-box.box-8 .bck-title {
+    background: #92cd8d;
+    padding: 10px 10px 11px 15px;
+    position: relative;
+    display: inline-block;
+    margin-left: -3px;
+    margin-top: -4px;
+    min-width: 150px;
+    font-weight: 700;
+}
+.bck-box.box-8 .bck-title:before, .bck-box.box-8 .bck-title:after {
+    border-bottom: 24px solid transparent;
+    border-top: 24px solid transparent;
+    top: -1px;
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+}
+.bck-box.box-8 .bck-title:before {
+    border-left: 16px solid #92cd8d;
+    right: -16px;
+    z-index: -1;
+}
+.bck-box.box-8 .bck-title:after {
+    border-left: 16px solid #92cd8d;
+    right: -15px;
+    z-index: 2;
+}
+.bck-box.box-8 .bck-content {
+    padding: 10px;
+}
+
+/*CAJA 9*/
+.bck-box.box-9 {
+    border: 2px dotted #da3d96;
+    padding: 10px;
+}
+.bck-box.box-9 .bck-title {
+    font-family: 'Conv_playtime-webfont', cursive;
+    font-size: 29px;
+    font-weight: 800;
+}
+
+/*CAJA 10*/
+.bck-box.box-10 {
+    border: 2px dotted #6DC1C3;
+    padding: 10px;
+}
+.bck-box.box-10 .bck-title:before {
+    content: "DIECI";
+    position: absolute;
+    background: #6dc1c3;
+    color: white;
+    padding: 10px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    left: 10px;
+}
+.bck-box.box-10 .bck-title {
+    font-family: 'Conv_playtime-webfont', cursive;
+    font-size: 29px;
+    padding-left: 84px;
+    font-weight: 800;
+}
+
+/*CAJAS 11, 12, 13 Y 14 - CAJA DE PUNTOS CON TITULO A COLOR*/
+.bck-box.box-11 .bck-title {
+    color: inherit;
+    font-weight: bold;
+}
+.bck-box.box-11,
+.bck-box.box-12,
+.bck-box.box-13,
+.bck-box.box-14,
+.bck-box.box-15,
+.bck-box.box-16 {
+    padding: 10px;
+    border: 2px dotted;
+}   
+.bck-box.box-11 {
+    border-color: #da3d96;
+}
+.bck-box.box-11 .bck-title {
+    color: #da3d96;
+}
+.bck-box.box-12 {
+    border-color: #6dc1c3;
+}
+.bck-box.box-12 .bck-title {
+    color: #6dc1c3;
+}
+.bck-box.box-13 {
+    border-color: #92cd8d;
+}
+.bck-box.box-13 .bck-title {
+    color: #92cd8d;
+}
+.bck-box.box-14 {
+    border-color: #FFCA08;
+}
+.bck-box.box-14 .bck-title {
+    color: #FFCA08;
+}
+.bck-box.box-15 {
+    border-color: #0e5ba5;
+}
+.bck-box.box-15 .bck-title {
+    color: #0e5ba5;
+}
+.bck-box.box-16 {
+    border-color: #da3832;
+}
+.bck-box.box-16 .bck-title {
+    color: #da3832;
+}
+
+/*-------LISTAS------*/
+
+/*Before en nueva coursetag*/
+.coursetag_almadieci .content ol li:before,
+.coursetag_almadieci .cke_contents ol li:before {
+    margin-right: 10px;
+}
+
+/*Lista 1*/
+.coursetag_almadieci .content ol.bck-ol1 li,
+.coursetag_almadieci .cke_contents ol.bck-ol1 li {
+        font-weight: normal;
+        font-size: 18px;
+        color: black;
+        margin: 6px 0px;
+}
+.coursetag_almadieci .content ol.bck-ol1 li:before,
+.coursetag_almadieci .cke_contents ol.bck-ol1 li:before {
+    font-family: 'Conv_playtime-webfont', cursive;
+    color: #da3d96;
+    margin-left: 0;
+    font-size: 28px;
+ }
+
+/*Lista 2*/
+.coursetag_almadieci .content ol.bck-ol2,
+.coursetag_almadieci .cke_contents ol.bck-ol2 {
+margin-bottom: 0px;
+padding-left: 0px;
+}
+.coursetag_almadieci .content ol.bck-ol2 li,
+.coursetag_almadieci .cke_contents ol.bck-ol2 li {
+        font-weight: normal;
+        font-size: 18px;
+        color: black;
+        margin: 6px 0px;
+    }
+.coursetag_almadieci .content ol.bck-ol2 li:before,
+.coursetag_almadieci .cke_contents ol.bck-ol2 li:before {
+    font-family: 'Conv_playtime-webfont', cursive;
+    color: #6DC1C3;
+    font-size: 28px;
+    margin-left: 0;
+    background: none;
+    position: relative;
+ }
+
+ /*Lista 3*/
+.content ol.bck-ol3,
+.cke_contents ol.bck-ol3 {
+margin-bottom: 0px;
+padding-left: 0px;
+}
+.content ol.bck-ol3 li,
+.cke_contents ol.bck-ol3 li {
+        font-weight: normal;
+        font-size: 18px;
+        color: black;
+        margin: 6px 0px;
+    }
+.content ol.bck-ol3 li:before,
+.cke_contents ol.bck-ol3 li:before {
+    font-family: 'Conv_playtime-webfont', cursive;
+    color: #92CD8D;
+    margin-left: 0;
+    font-size: 28px;
+ }
+
+  /*Lista 4*/
+.content ol.bck-ol4,
+.cke_contents ol.bck-ol4 {
+margin-bottom: 0px;
+padding-left: 0px;
+}
+.content ol.bck-ol4 li,
+.cke_contents ol.bck-ol4 li {
+        font-weight: normal;
+        font-size: 18px;
+        color: black;
+        margin: 6px 0px;
+    }
+.content ol.bck-ol4 li:before,
+.cke_contents ol.bck-ol4 li:before {
+    font-family: 'Conv_playtime-webfont', cursive;
+    color: #FED65D;
+    margin-left: 0;
+    font-size: 28px;
+ }
+
+ .content ol.bck-ol8 li:before,
+.cke_contents ol.bck-ol8 li:before {
+    font-family: 'Conv_playtime-webfont', cursive;
+    color: #0e5ba5;
+    margin-left: 0;
+    font-size: 28px;
+ }
+
+ .content ol.bck-ol9 li:before,
+ .cke_contents ol.bck-ol9 li:before {
+     font-family: 'Conv_playtime-webfont', cursive;
+     color: #da3832;
+     margin-left: 0;
+     font-size: 28px;
+  }
+
+
+
+ /*Lista 5 - A, B C*/
+.content ol.bck-ol5 li:before, 
+.cke_contents ol.bck-ol5 li:before {
+    content: counter(bck-li-counter,lower-alpha)'';
+    color: #76c5c7;
+    margin-left: 0;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+ /*Lista 6 - Lista con fondo de color celeste*/
+ .content ol.bck-ol6 li:before, 
+ .cke_contents ol.bck-ol6 li:before {
+    color: white;
+    background: #76c5c7;
+    margin-left: 0;
+    font-size: 28px;
+    font-family: 'Conv_playtime-webfont', cursive;
+    padding: 0px 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    vertical-align: middle;
+    font-weight: 800;
+ }
+  .content ol.bck-ol6 li,
+.cke_contents ol.bck-ol6 li {
+    font-weight: normal;
+    font-size: 18px;
+    color: black;
+    margin: 6px 0px 22px 0px;
+}
+ /*Lista 7 - Lista con fondo de color rosa*/
+ .content ol.bck-ol7 li:before, 
+ .cke_contents ol.bck-ol7 li:before {
+    color: white;
+    background: #DA3D96;
+    margin-left: 0;
+    font-size: 28px;
+    font-family: 'Conv_playtime-webfont', cursive;
+    padding: 0px 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    vertical-align: middle;
+    font-weight: 800;
+ }
+  .content ol.bck-ol7 li,
+.cke_contents ol.bck-ol7 li {
+    font-weight: normal;
+    font-size: 18px;
+    color: black;
+    margin: 6px 0px 22px 0px;
+}
+
+ /*-------------------------- TABLAS ---------------------------*/
+ /* Celda 1 con coursetag*/
+ .coursetag_almadieci .texto_curso td.bck-td1 {
+    background: #6DC1C3;
+    color: white;
+}
+
+ /* Celda 2 con coursetag*/
+ .coursetag_almadieci .texto_curso td.bck-td2 {
+    background: #6dc1c373;
+    color: #000;
+}
+
+ /* Celda 3 con coursetag*/
+ .coursetag_almadieci .texto_curso td.bck-td3 {
+    background: #DA3D96;
+    color: white;
+}
+
+ /* Celda 4 con coursetag*/
+ .coursetag_almadieci .texto_curso td.bck-td4 {
+    background: #da3d9647;
+    color: #000;
+}
+
+/*---------------------*/
+
+
+
+/*--------------- CAMBIOS EN TITLE POR SECCIONES ----------------*/
+/*Verde*/
+.coursetag_almadieci.content_type_clase_julioalma #actividad .content .verde .header {
+    border-bottom: 5px solid #92CD8D;
+}
+.coursetag_almadieci.content_type_clase_julioalma #actividad .content .verde .header .title h3 {
+    color: #92CD8D;
+}
+.coursetag_almadieci.content_type_clase_julioalma #actividad .content .verde .header .title h3 span.slide_number {
+    background: #92CD8D;
+}
+.coursetag_almadieci.content_type_clase_julioalma #actividad .content .verde .header .title .area {
+    background: #92CD8D;
+}
+/*Celeste*/
+.coursetag_almadieci.content_type_clase_julioalma #actividad .content .celeste .header {
+    border-bottom: 5px solid #6DC1C3;
+}
+.coursetag_almadieci.content_type_clase_julioalma #actividad .content .celeste .header .title h3 {
+    color: #6DC1C3;
+}
+.coursetag_almadieci.content_type_clase_julioalma #actividad .content .celeste .header .title h3 span.slide_number {
+    background: #6DC1C3;
+}
+.coursetag_almadieci.content_type_clase_julioalma #actividad .content .celeste .header .title .area {
+    background: #6DC1C3;
+}
+/*amarillo*/
+.coursetag_almadieci.content_type_clase_julioalma #actividad .content .amarillo .header {
+    border-bottom: 5px solid #FED65D;
+}
+.coursetag_almadieci.content_type_clase_julioalma #actividad .content .amarillo .header .title h3 {
+    color: #FED65D;
+}
+.coursetag_almadieci.content_type_clase_julioalma #actividad .content .amarillo .header .title h3 span.slide_number {
+    background: #FED65D;
+}
+.coursetag_almadieci.content_type_clase_julioalma #actividad .content .amarillo .header .title .area {
+    background: #FED65D;
+}
+
+/*Azul*/
+.coursetag_almadieci.content_type_clase_julioalma #actividad .content .azul .header {
+    border-bottom: 5px solid #0e5ba5;
+}
+.coursetag_almadieci.content_type_clase_julioalma #actividad .content .azul .header .title h3 {
+    color: #0e5ba5;
+}
+.coursetag_almadieci.content_type_clase_julioalma #actividad .content .azul .header .title h3 span.slide_number {
+    background: #0e5ba5;
+}
+.coursetag_almadieci.content_type_clase_julioalma #actividad .content .azul .header .title .area {
+    background: #0e5ba5;
+}
+
+/*Rojo*/
+.coursetag_almadieci.content_type_clase_julioalma #actividad .content .rojo .header {
+    border-bottom: 5px solid #da3832;
+}
+.coursetag_almadieci.content_type_clase_julioalma #actividad .content .rojo .header .title h3 {
+    color: #da3832;
+}
+.coursetag_almadieci.content_type_clase_julioalma #actividad .content .rojo .header .title h3 span.slide_number {
+    background: #da3832;
+}
+.coursetag_almadieci.content_type_clase_julioalma #actividad .content .rojo .header .title .area {
+    background: #da3832;
+}
+
+
+
+/*-------------------------- QUERIES -----------------------------------*/
+
+/* Smartphones (portrait & landscape) */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+    .bck-box.box-8 .bck-title {
+        min-height: 71px;
+    }
+    .bck-box.box-8 .bck-title:after,
+     .bck-box.box-8 .bck-title:before {
+        border-bottom: 38px solid transparent;
+        border-top: 35px solid transparent;
+    }
+    .coursetag_almadieci #actividad .class_slide {
+        padding-bottom: 20px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .coursetag_almadieci.content_type_clase_julioalma #actividad .content .header {
+        padding: 70px 0px 0px 13px;
+    }
+    .content_type_clase_julioalma #actividad .content .header .title {
+        padding-right: 0px;
+    }
+    .coursetag_almadieci.content_type_clase_julioalma #actividad .content .header .title h3 span.slide_number {
+        top: 0;
+        margin-top: auto;
+    }
+
+}
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------*/
+/* ------------------------ activitytag .activitytag_almanuovoespresso ----------------------------- */
+/*----------------------------------------------------------------------------------------------*/
+
+/*-NAVBAR*/
+.activitytag_almanuovoespresso.content_type_clase_julioalma .publisher-navbar {
+    border-bottom: 2px solid #d52422;
+}
+/* --- PADDING DE LA PÁGINA ---*/
+.activitytag_almanuovoespresso #actividad .carousel-inner .item-container {
+    padding-top: 0;
+}
+/* ---- HEADER ---- */
+.activitytag_almanuovoespresso.content_type_clase_julioalma #actividad .content .header .title {
+    background: none;
+    padding: 47px 10px 5px 10px;
+    border: 2px solid #EE1C29;
+    border-top: 0;
+    text-align: center;
+}
+.activitytag_almanuovoespresso.content_type_clase_julioalma #actividad .content .header .title h3 span.slide_number {
+    line-height: 2.0;
+    background: #ee1c29;
+    top: 0;
+    right: 109px;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    height: 48px;
+}
+.activitytag_almanuovoespresso.content_type_clase_julioalma #actividad .content .header .title h3 {
+    color: #ee1c29;
+    padding-top: 8px;
+}
+
+/*Lista 1 y titulo 1*/
+.activitytag_almanuovoespresso h4.bck-title1 {
+    font-size: 22px;
+}
+.activitytag_almanuovoespresso .content ol.bck-ol1 li,
+.activitytag_almanuovoespresso .cke_contents ol.bck-ol1 li,
+.activitytag_almanuovoespresso h4.bck-title1 {
+    color: #ee1c29;
+}
+.activitytag_almanuovoespresso .content ol.bck-ol1 li:before,
+.activitytag_almanuovoespresso .cke_contents ol.bck-ol1 li:before {
+    color: #ee1c29;
+}
+.activitytag_almanuovoespresso .content ol.bck-ol2 li:before,
+ .activitytag_almanuovoespresso .cke_contents ol.bck-ol2 li:before {
+    background: #ee1c29;
+}
+
+/* Smartphones (portrait & landscape) */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+    .activitytag_almanuovoespresso.content_type_clase_julioalma #actividad .content .header .title h3 span.slide_number,
+    .activitytag_almanuovoespressoazul.content_type_clase_julioalma #actividad .content .header .title h3 span.slide_number,
+    .activitytag_almanuovoespressoverde.content_type_clase_julioalma #actividad .content .header .title h3 span.slide_number,
+    .activitytag_almanuovoespressorosa.content_type_clase_julioalma #actividad .content .header .title h3 span.slide_number
+     {
+        line-height: 2.0;
+        right: 132px;
+        font-size: 25px;
+        text-align: center;
+        line-height: 1.8;
+        padding-left: 33px;
+        margin-top: auto;
+    }
+}
+
+
+/*----------------------------------------------------------------------------------------------*/
+/* ------------------------ activitytag .activitytag_almanuovoespressoazul ----------------------------- */
+/*----------------------------------------------------------------------------------------------*/
+
+/*-NAVBAR*/
+.activitytag_almanuovoespressoazul.content_type_clase_julioalma .publisher-navbar {
+    border-bottom: 2px solid #009CAB;
+}
+/* --- PADDING DE LA PÁGINA ---*/
+.activitytag_almanuovoespressoazul #actividad .carousel-inner .item-container {
+    padding-top: 0;
+}
+/* ---- HEADER ---- */
+.activitytag_almanuovoespressoazul.content_type_clase_julioalma #actividad .content .header .title {
+    background: none;
+    padding: 47px 10px 5px 10px;
+    border: 2px solid #009CAB;
+    border-top: 0;
+    text-align: center;
+}
+.activitytag_almanuovoespressoazul.content_type_clase_julioalma #actividad .content .header .title h3 span.slide_number {
+    line-height: 2.0;
+    background: #009CAB;
+    top: 0;
+    right: 109px;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    height: 48px;
+}
+.activitytag_almanuovoespressoazul.content_type_clase_julioalma #actividad .content .header .title h3 {
+    color: #009CAB;
+    padding-top: 8px;
+}
+
+/*Lista 1 y titulo 1*/
+.activitytag_almanuovoespressoazul h4.bck-title1 {
+    font-size: 22px;
+}
+.activitytag_almanuovoespressoazul .content ol.bck-ol1 li,
+.activitytag_almanuovoespressoazul .cke_contents ol.bck-ol1 li,
+.activitytag_almanuovoespressoazul h4.bck-title1 {
+    color: #009CAB;
+}
+.activitytag_almanuovoespressoazul .content ol.bck-ol1 li:before,
+.activitytag_almanuovoespressoazul .cke_contents ol.bck-ol1 li:before {
+    color: #009CAB;
+}
+.activitytag_almanuovoespressoazul .content ol.bck-ol2 li:before,
+ .activitytag_almanuovoespressoazul .cke_contents ol.bck-ol2 li:before {
+    background: #009CAB;
+}
+
+/*----------------------------------------------------------------------------------------------*/
+/* ------------------------ activitytag .activitytag_almanuovoespressoverde ----------------------------- */
+/*----------------------------------------------------------------------------------------------*/
+
+/*-NAVBAR*/
+.activitytag_almanuovoespressoverde.content_type_clase_julioalma .publisher-navbar {
+    border-bottom: 2px solid #71BF45;
+}
+/* --- PADDING DE LA PÁGINA ---*/
+.activitytag_almanuovoespressoverde #actividad .carousel-inner .item-container {
+    padding-top: 0;
+}
+/* ---- HEADER ---- */
+.activitytag_almanuovoespressoverde.content_type_clase_julioalma #actividad .content .header .title {
+    background: none;
+    padding: 47px 10px 5px 10px;
+    border: 2px solid #71BF45;
+    border-top: 0;
+    text-align: center;
+}
+.activitytag_almanuovoespressoverde.content_type_clase_julioalma #actividad .content .header .title h3 span.slide_number {
+    line-height: 2.0;
+    background: #71BF45;
+    top: 0;
+    right: 109px;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    height: 48px;
+}
+.activitytag_almanuovoespressoverde.content_type_clase_julioalma #actividad .content .header .title h3 {
+    color: #71BF45;
+    padding-top: 8px;
+}
+
+/*Lista 1 y titulo 1*/
+.activitytag_almanuovoespressoverde h4.bck-title1 {
+    font-size: 22px;
+}
+.activitytag_almanuovoespressoverde .content ol.bck-ol1 li,
+.activitytag_almanuovoespressoverde .cke_contents ol.bck-ol1 li,
+.activitytag_almanuovoespressoverde h4.bck-title1 {
+    color: #71BF45;
+}
+.activitytag_almanuovoespressoverde .content ol.bck-ol1 li:before,
+.activitytag_almanuovoespressoverde .cke_contents ol.bck-ol1 li:before {
+    color: #71BF45;
+}
+.activitytag_almanuovoespressoverde .content ol.bck-ol2 li:before,
+ .activitytag_almanuovoespressoverde .cke_contents ol.bck-ol2 li:before {
+    background: #71BF45;
+}
+
+/*----------------------------------------------------------------------------------------------*/
+/* ------------------------ activitytag .activitytag_almanuovoespressorosa ----------------------------- */
+/*----------------------------------------------------------------------------------------------*/
+
+/*-NAVBAR*/
+.activitytag_almanuovoespressorosa.content_type_clase_julioalma .publisher-navbar {
+    border-bottom: 2px solid #B51E91;
+}
+/* --- PADDING DE LA PÁGINA ---*/
+.activitytag_almanuovoespressorosa #actividad .carousel-inner .item-container {
+    padding-top: 0;
+}
+/* ---- HEADER ---- */
+.activitytag_almanuovoespressorosa.content_type_clase_julioalma #actividad .content .header .title {
+    background: none;
+    padding: 47px 10px 5px 10px;
+    border: 2px solid #B51E91;
+    border-top: 0;
+    text-align: center;
+}
+.activitytag_almanuovoespressorosa.content_type_clase_julioalma #actividad .content .header .title h3 span.slide_number {
+    line-height: 2.0;
+    background: #B51E91;
+    top: 0;
+    right: 109px;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    height: 48px;
+}
+.activitytag_almanuovoespressorosa.content_type_clase_julioalma #actividad .content .header .title h3 {
+    color: #B51E91;
+    padding-top: 8px;
+}
+
+/*Lista 1 y titulo 1*/
+.activitytag_almanuovoespressorosa h4.bck-title1 {
+    font-size: 22px;
+}
+.activitytag_almanuovoespressorosa .content ol.bck-ol1 li,
+.activitytag_almanuovoespressorosa .cke_contents ol.bck-ol1 li,
+.activitytag_almanuovoespressorosa h4.bck-title1 {
+    color: #B51E91;
+}
+.activitytag_almanuovoespressorosa .content ol.bck-ol1 li:before,
+.activitytag_almanuovoespressorosa .cke_contents ol.bck-ol1 li:before {
+    color: #B51E91;
+}
+.activitytag_almanuovoespressorosa .content ol.bck-ol2 li:before,
+ .activitytag_almanuovoespressorosa .cke_contents ol.bck-ol2 li:before {
+    background: #B51E91;
+}
