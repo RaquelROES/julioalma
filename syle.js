@@ -1,15 +1,14 @@
 (function (blink) {
 	'use strict';
 
-	var julioalma = function () {
+	var julioalma_Style = function () {
 			blink.theme.styles.basic.apply(this, arguments);
 		},
 		page = blink.currentPage;
 
-	julioalma.prototype = {
-
+	julioalma_Style.prototype = {
 		bodyClassName: 'content_type_clase_julioalma',
-		extraPlugins: ['image2'],
+		parent: blink.theme.styles.basic.prototype,
 		ckEditorStyles: {
 			name: 'julioalma',
 			styles: [
@@ -100,10 +99,10 @@
 
 		//BK-15873 Quitamos la funcion getEditorStyles para que la herede de basic
 	};
+ 
+	julioalma_Style.prototype = _.extend({}, new blink.theme.styles.basic(), julioalma_Style.prototype);
 
-	julioalma.prototype = _.extend({}, new blink.theme.styles.basic(), julioalma.prototype);
-
-	blink.theme.styles['julioalma'] = julioalma;
+	blink.theme.styles['julioalma'] = julioalma_Style;
 
 })( blink );
 
